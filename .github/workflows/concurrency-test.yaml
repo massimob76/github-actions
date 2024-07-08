@@ -4,14 +4,14 @@ on:
   workflow_dispatch:
 concurrency:
   group: sleepy
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   sleep-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: sleep 10
+      - name: sleep
         run: |
           echo "before sleep"
-          sleep 10
+          sleep 30
           echo "after sleep"
