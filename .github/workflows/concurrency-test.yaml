@@ -1,0 +1,14 @@
+name: concurrency-test
+run-name: ${{github.actor}} is learning github actions
+on:
+  - push
+jobs:
+  sleep-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: sleep 10
+        run: |
+          echo "before sleep"
+          sleep 10
+          echo "after sleep"
