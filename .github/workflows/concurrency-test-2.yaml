@@ -12,6 +12,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: sleep
         run: |
+          date
           echo "before sleep"
           sleep 30
+          date
           echo "after sleep"
