@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 concurrency:
   group: sleepy
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   sleep-job:
     runs-on: ubuntu-latest
