@@ -1,4 +1,4 @@
-name: concurrency-test
+name: concurrency-test-2
 run-name: ${{github.actor}} is learning github actions
 on:
   workflow_dispatch:
